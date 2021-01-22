@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+html{
+  font-size: 93.75%;/* É igual a 15px*/
+}
+
 body{
   background-color: #f0f2f5;
   font-family: 'poppins', sans-serif;
@@ -38,6 +42,22 @@ h2{
   color: var(--dark-blue);
   font-weight: normal;
 }
+
+/*links and buttons---------------*/
+a{
+  color: #49aa26;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #3dd705;
+}
+
+.button.new{
+  margin-bottom: .8rem;
+  display: inline-block; /*Pegas as propriedades do inline e do block no inline é possivelusar margin-bottom e no block não além do block usar 100% da caixa*/
+}
+
 
 /*header----------------------*/
 header{
@@ -73,7 +93,9 @@ header{
 .card h3{
   font-weight: normal;
   font-size: 1rem;
-
+  display: flex; /* coloca os elementos um ao lado do outro*/
+  align-items: center;/* Só da para usar a propriedade align-items depois de usar a propriedade display: flex*/
+  justify-content: space-between;/*Ajusta o conteúdo entre o espaço entre eles*/
 }
 
 .card p{
@@ -100,6 +122,10 @@ table tbody tr td:first-child{
   border-radius: 0.25rem 0 0 0.25rem;
 }
 
+table thead tr th:last-child,
+table tbody tr td:last-child{
+  border-radius: 0 0.25rem 0.25rem 0;
+}
 
 table thead th{
   background: white;
@@ -141,3 +167,5 @@ footer{
   color: var(--dark-blue);
   opacity: 0.6;
 }
+
+/*Responsive--------------------*/
