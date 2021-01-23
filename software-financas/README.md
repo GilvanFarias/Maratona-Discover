@@ -4,5 +4,5 @@
 
 </h1>
 
-<h2> Sistema que ajuda no balanço calculando a entra e saída da suas contas. </h2>
+<h4> Sistema que ajuda no balanço calculando a entra e saída da suas contas. </h4>
 
